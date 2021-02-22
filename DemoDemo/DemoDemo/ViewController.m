@@ -10,13 +10,22 @@
 //runtime.h文件属于非公开文件(文件引入不会自动弹出/手动强制写入)
 #import <objc/runtime.h>
 
+
+
 #import "Dog.h"
+#import "XibTestView.h"
 #define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()
 //链接渲染
 @property(nonatomic,strong)CADisplayLink *displayLink;
 @property(nonatomic,assign)double beginTime;
 @property(nonatomic,assign)int count;
+@property (weak, nonatomic) IBOutlet UILabel *oneL;
+
+@property (weak, nonatomic) IBOutlet UILabel *twoL;
+
+
 @end
 
 @implementation ViewController
@@ -237,9 +246,6 @@
 
 }
 
-
-
-
 //base64字符串转PDF文件
 - (void)pdfFromBase64String:(NSString *)base64 {
     NSData *EncryptData = [self dataFromBase64String:base64];
@@ -307,6 +313,19 @@
 }
 
 - (void)xibConstraints {
+    NSArray *elementsLt = [[NSBundle mainBundle] loadNibNamed:@"CustomTestCanvas" owner:self options:nil];
+    XibTestView *elementDirectXib = [XibTestView new];
+    if (elementsLt.count>0) {
+        //(获取)最下面层视图(元素数目)
+        elementDirectXib = [elementsLt firstObject];
+    }
+    [self.view addSubview:elementDirectXib];
+    elementDirectXib.frame = CGRectMake(0, 0, kScreenW, kScreenH);
+
+    self.oneL.text = @"王乐乐王";
+    self.twoL.text = @"不住";
+
+//    NSLog(@"frame=%@==%@",NSStringFromCGRect(elementDirectXib.frame),NSStringFromCGRect(self.view.frame));
 
 }
 

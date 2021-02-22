@@ -17,6 +17,8 @@
 		F31A30AE25665D3E00FA863A /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31A30AD25665D3E00FA863A /* Speech.framework */; };
 		F31A30B72566B79D00FA863A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31A30B62566B79D00FA863A /* AVFoundation.framework */; };
 		F31EA7D72573F72E00D17132 /* NSObject+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = F31EA7D62573F72E00D17132 /* NSObject+Supplement.m */; };
+		F323997F25DE9AA700B022BB /* XibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = F323997E25DE9AA700B022BB /* XibTestView.m */; };
+		F323998225DE9F9B00B022BB /* CustomTestCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = F323998125DE9F9B00B022BB /* CustomTestCanvas.xib */; };
 		F34D6427257F8ED900A064A2 /* NSObject+TimerDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F34D6426257F8ED900A064A2 /* NSObject+TimerDown.m */; };
 		F3554D5525753AC600913B95 /* UIView+Swizz.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554D5425753AC600913B95 /* UIView+Swizz.m */; };
 		F3554D592575E8B100913B95 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554D582575E8B100913B95 /* Dog.m */; };
@@ -57,6 +59,9 @@
 		F31EA7D22573F2FA00D17132 /* DemoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		F31EA7D52573F72E00D17132 /* NSObject+Supplement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Supplement.h"; sourceTree = "<group>"; };
 		F31EA7D62573F72E00D17132 /* NSObject+Supplement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Supplement.m"; sourceTree = "<group>"; };
+		F323997D25DE9AA700B022BB /* XibTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibTestView.h; sourceTree = "<group>"; };
+		F323997E25DE9AA700B022BB /* XibTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibTestView.m; sourceTree = "<group>"; };
+		F323998125DE9F9B00B022BB /* CustomTestCanvas.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTestCanvas.xib; sourceTree = "<group>"; };
 		F34D6425257F8ED900A064A2 /* NSObject+TimerDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TimerDown.h"; sourceTree = "<group>"; };
 		F34D6426257F8ED900A064A2 /* NSObject+TimerDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TimerDown.m"; sourceTree = "<group>"; };
 		F3554D5325753AC600913B95 /* UIView+Swizz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Swizz.h"; sourceTree = "<group>"; };
@@ -114,6 +119,9 @@
 				F31A309725664FEB00FA863A /* SceneDelegate.m */,
 				F31A309925664FEB00FA863A /* ViewController.h */,
 				F31A309A25664FEB00FA863A /* ViewController.m */,
+				F323997D25DE9AA700B022BB /* XibTestView.h */,
+				F323997E25DE9AA700B022BB /* XibTestView.m */,
+				F323998125DE9F9B00B022BB /* CustomTestCanvas.xib */,
 				F3554D572575E8B100913B95 /* Dog.h */,
 				F3554D582575E8B100913B95 /* Dog.m */,
 				F3554D5325753AC600913B95 /* UIView+Swizz.h */,
@@ -215,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F323998225DE9F9B00B022BB /* CustomTestCanvas.xib in Resources */,
 				F31A30A325664FEC00FA863A /* LaunchScreen.storyboard in Resources */,
 				F31A30A025664FEC00FA863A /* Assets.xcassets in Resources */,
 				F31A309E25664FEB00FA863A /* Main.storyboard in Resources */,
@@ -234,6 +243,7 @@
 				F3D230A1257E615200B561DE /* UIColor+Additions.m in Sources */,
 				F31A30A625664FEC00FA863A /* main.m in Sources */,
 				F31A309825664FEB00FA863A /* SceneDelegate.m in Sources */,
+				F323997F25DE9AA700B022BB /* XibTestView.m in Sources */,
 				F34D6427257F8ED900A064A2 /* NSObject+TimerDown.m in Sources */,
 				F3554D592575E8B100913B95 /* Dog.m in Sources */,
 				F3554D5525753AC600913B95 /* UIView+Swizz.m in Sources */,
@@ -382,7 +392,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCL9H5966U;
-				GCC_PREFIX_HEADER = "/Users/haijunyan/Desktop/RuntimeDemo/DemoDemo/DemoDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/haijunyan/Desktop/CustomKit/CaseDemoDariy/DemoDemo/DemoDemo-Prefix.pch";
 				INFOPLIST_FILE = DemoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,7 +417,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCL9H5966U;
-				GCC_PREFIX_HEADER = "/Users/haijunyan/Desktop/RuntimeDemo/DemoDemo/DemoDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/haijunyan/Desktop/CustomKit/CaseDemoDariy/DemoDemo/DemoDemo-Prefix.pch";
 				INFOPLIST_FILE = DemoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
