@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *oneL;
 
 @property (weak, nonatomic) IBOutlet UILabel *twoL;
+@property (weak, nonatomic) IBOutlet UIButton *threeBtn;
 
 
 @end
@@ -321,14 +322,49 @@
     }
     [self.view addSubview:elementDirectXib];
     elementDirectXib.frame = CGRectMake(0, 0, kScreenW, kScreenH);
-
-    self.oneL.text = @"王乐乐王";
+    self.oneL.text = @"王王王王王王王王王王随便随便随便随便随便随便随便随便随便";
     self.twoL.text = @"不住";
 
+
+
+    //view1可以待布局元件也可以为参考元件
+    //view2可以参考元件也可以为待布局元件
+    //事件函数计算公式:
+    //view1.attr1 <relation> view2.attr2 * multiplier + constant
+
+    //view1：约束线左(上)边端的元件(左(上)元件1)
+    //attr1：指定view1约束线相关的轴线属性attr1(左(上)元件1的轴线属性attr1)
+
+    //relation:view1元件/view2元件相应轴线属性的关系(位置方面关系)
+
+    //view2：约束线右(下)边端的元件(右(下)元件2)
+    //attr2：指定view2约束线相关的轴线属性attr2(右(下)元件2的轴线属性attr2)
+    //multiplier：乘数因子(相对右(下)元件view2的长度方面属性涉及到的乘数因子multiplier)(尺寸方面乘数因子)
+    //c：相对右(下)元件view2的属性进行叠加的浮点常数据constant(移位效果)
+    //注意:如果相关的约束线不需要右(下)view2元件，则将view2参数设为nil，attr2参数设为NSLayoutAttributeNotAnAttribute
+
+    NSLayoutConstraint *leftConstraint;
+    //构建约束线
+    leftConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.threeBtn attribute:NSLayoutAttributeLeft multiplier:1 constant:-15];
+    //已存在的约束线绑定视图(有效化)
+    [self.view addConstraint:leftConstraint];
+
+    NSLayoutConstraint *topConstraint;
+    //构建约束线
+    topConstraint = [NSLayoutConstraint constraintWithItem:self.threeBtn attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:-100];
+    //已存在的约束线绑定视图(有效化)
+    [self.view addConstraint:topConstraint];
+
+
+
+    //view1.attr1 <relation> view2.attr2 * multiplier + constant
+
+
+
+
+
+
 //    NSLog(@"frame=%@==%@",NSStringFromCGRect(elementDirectXib.frame),NSStringFromCGRect(self.view.frame));
-
 }
-
-
 
 @end

@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
                 <outlet property="oneL" destination="qdI-ZC-1ts" id="d31-E7-RGh"/>
+                <outlet property="threeBtn" destination="GoX-na-Miv" id="MMR-vn-gwA"/>
                 <outlet property="twoL" destination="ifW-hs-gho" id="rt0-2e-k1b"/>
             </connections>
         </placeholder>
@@ -44,7 +45,17 @@
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hY-nL-j3H" userLabel="twoBtn">
-                    <rect key="frame" x="353" y="224" width="46" height="30"/>
+                    <rect key="frame" x="299" y="216.5" width="100" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="htp-MH-Kks"/>
+                        <constraint firstAttribute="width" constant="100" id="rHy-b1-1gP"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoX-na-Miv" userLabel="threeBtn">
+                    <rect key="frame" x="113" y="322" width="189" height="103"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                     <state key="normal" title="Button"/>
                 </button>
             </subviews>
@@ -68,6 +79,9 @@
     <resources>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
