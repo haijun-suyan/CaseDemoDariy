@@ -324,8 +324,9 @@
     elementDirectXib.frame = CGRectMake(0, 0, kScreenW, kScreenH);
     self.oneL.text = @"王王王王王王王王王王随便随便随便随便随便随便随便随便随便";
     self.twoL.text = @"不住";
-
-
+    if (![self.threeBtn isDescendantOfView:self.view]) {
+        [self.view addSubview:self.threeBtn];
+    }
 
     //view1可以待布局元件也可以为参考元件
     //view2可以参考元件也可以为待布局元件
@@ -343,10 +344,16 @@
     //c：相对右(下)元件view2的属性进行叠加的浮点常数据constant(移位效果)
     //注意:如果相关的约束线不需要右(下)view2元件，则将view2参数设为nil，attr2参数设为NSLayoutAttributeNotAnAttribute
 
+    //关键点1
+    //待布局元件(禁用AutoresizingMask(约束线(指令)生效))
+    [self.threeBtn setTranslatesAutoresizingMaskIntoConstraints:NO];
+
+    //关键点2
     NSLayoutConstraint *leftConstraint;
-    //构建约束线
+    //构建约束线(指令)
     leftConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.threeBtn attribute:NSLayoutAttributeLeft multiplier:1 constant:-15];
-    //已存在的约束线绑定视图(有效化)
+    //关键点3
+    //已存在的约束线(指令)绑定视图(有效化)
     [self.view addConstraint:leftConstraint];
 
     NSLayoutConstraint *topConstraint;
@@ -355,9 +362,6 @@
     //已存在的约束线绑定视图(有效化)
     [self.view addConstraint:topConstraint];
 
-
-
-    //view1.attr1 <relation> view2.attr2 * multiplier + constant
 
 
 
