@@ -1,4 +1,5 @@
-//
+//  IntrinsicContentSize内在内容大小
+//  sizetofit尺寸匹配
 //  ViewController.m
 //  DemoDemo
 //  域本身的实例值self
@@ -14,6 +15,8 @@
 
 #import "Dog.h"
 #import "XibTestView.h"
+#import "XibTestViewTwo.h"
+#import "ScrollContainerView.h"
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()
@@ -24,7 +27,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *oneL;
 
 @property (weak, nonatomic) IBOutlet UILabel *twoL;
-@property (weak, nonatomic) IBOutlet UIButton *threeBtn;
+@property (weak, nonatomic) IBOutlet UIButton*threeBtn;
+
+@property(nonatomic,strong)ScrollContainerView *containerView;
+@property(nonatomic,strong)UIView *contentV;
+
 
 
 @end
@@ -117,7 +124,22 @@
     label.text = @"你好吗，中国人！";
     [self.view addSubview:label];
 
+}
 
+- (ScrollContainerView *)containerView {
+    if (!_containerView) {
+        _containerView = [[ScrollContainerView alloc] init];
+        [_containerView backGroundColorContainer:[UIColor whiteColor]];
+    }
+    return _containerView;
+}
+
+- (UIView *)contentV{
+    if (!_contentV) {
+        _contentV = [[UIView alloc] init];
+        _contentV.backgroundColor = [UIColor whiteColor];
+    }
+    return _contentV;
 }
 
 - (void)runTimeAnalysis {
@@ -314,19 +336,22 @@
 }
 
 - (void)xibConstraints {
-    NSArray *elementsLt = [[NSBundle mainBundle] loadNibNamed:@"CustomTestCanvas" owner:self options:nil];
-    XibTestView *elementDirectXib = [XibTestView new];
-    if (elementsLt.count>0) {
-        //(获取)最下面层视图(元素数目)
-        elementDirectXib = [elementsLt firstObject];
-    }
-    [self.view addSubview:elementDirectXib];
-    elementDirectXib.frame = CGRectMake(0, 0, kScreenW, kScreenH);
-    self.oneL.text = @"王王王王王王王王王王随便随便随便随便随便随便随便随便随便";
-    self.twoL.text = @"不住";
-    if (![self.threeBtn isDescendantOfView:self.view]) {
-        [self.view addSubview:self.threeBtn];
-    }
+//    NSArray *elementsLt = [[NSBundle mainBundle] loadNibNamed:@"CustomTestCanvas" owner:self options:nil];
+//
+//
+//    XibTestView *elementDirectXib = [XibTestView new];
+//    if (elementsLt.count>0) {
+//        //(获取)最下面层视图(元素数目)
+//        elementDirectXib = [elementsLt firstObject];
+//    }
+//    [self.view addSubview:elementDirectXib];
+//    elementDirectXib.frame = CGRectMake(0, 0, kScreenW, kScreenH);
+//
+//    self.oneL.text = @"王王王王王王王王王王随便随便随便随便随便随便随便随便随便";
+//    self.twoL.text = @"不住";
+//    if (![self.threeBtn isDescendantOfView:self.view]) {
+//        [self.view addSubview:self.threeBtn];
+//    }
 
     //view1可以待布局元件也可以为参考元件
     //view2可以参考元件也可以为待布局元件
@@ -344,31 +369,87 @@
     //c：相对右(下)元件view2的属性进行叠加的浮点常数据constant(移位效果)
     //注意:如果相关的约束线不需要右(下)view2元件，则将view2参数设为nil，attr2参数设为NSLayoutAttributeNotAnAttribute
 
-    //关键点1
-    //待布局元件(禁用AutoresizingMask(约束线(指令)生效))
-    [self.threeBtn setTranslatesAutoresizingMaskIntoConstraints:NO];
-
-    //关键点2
-    NSLayoutConstraint *leftConstraint;
-    //构建约束线(指令)
-    leftConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.threeBtn attribute:NSLayoutAttributeLeft multiplier:1 constant:-15];
-    //关键点3
-    //已存在的约束线(指令)绑定视图(有效化)
-    [self.view addConstraint:leftConstraint];
-
-    NSLayoutConstraint *topConstraint;
-    //构建约束线
-    topConstraint = [NSLayoutConstraint constraintWithItem:self.threeBtn attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:-100];
-    //已存在的约束线绑定视图(有效化)
-    [self.view addConstraint:topConstraint];
-
-
-
-
-
-
+//    //关键点1
+//    //待布局元件(禁用AutoresizingMask(约束线(指令)生效))
+//    [self.threeBtn setTranslatesAutoresizingMaskIntoConstraints:NO];
+//
+//    //关键点2
+//    NSLayoutConstraint *leftConstraint;
+//    //构建约束线(指令)
+//    leftConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.threeBtn attribute:NSLayoutAttributeLeft multiplier:1 constant:-15];
+//    //关键点3
+//    //已存在的约束线(指令)绑定视图(有效化)
+//    [self.view addConstraint:leftConstraint];
+//
+//    NSLayoutConstraint *topConstraint;
+//    //构建约束线
+//    topConstraint = [NSLayoutConstraint constraintWithItem:self.threeBtn attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:-100];
+//    //已存在的约束线绑定视图(有效化)
+//    [self.view addConstraint:topConstraint];
 
 //    NSLog(@"frame=%@==%@",NSStringFromCGRect(elementDirectXib.frame),NSStringFromCGRect(self.view.frame));
+//    elementDirectXib.frame = CGRectMake(0, 0, kScreenW, 0.8*kScreenH);
+
+
+    //    XibTestViewTwo *elementDirectXibTwo = [[[NSBundle mainBundle] loadNibNamed:@"XibTestViewTwo" owner:self options:nil] firstObject];
+
+    XibTestViewTwo *elementDirectXibTwo = [XibTestViewTwo shareInstance];
+    [self.view addSubview:elementDirectXibTwo];
+    elementDirectXibTwo.frame = CGRectMake(0, 8, kScreenW, kScreenH*0.7);
+    [elementDirectXibTwo sizeToFit];
+    [elementDirectXibTwo setNeedsDisplay];
+//    elementDirectXibTwo.contentMode = UIViewContentModeRedraw;
+
+
+
+
+
+
+    elementDirectXibTwo.frame = CGRectMake(0, 103, kScreenW, kScreenH*0.7);
+
+//    [elementDirectXibTwo layoutIfNeeded];
+//    [elementDirectXibTwo layoutSubviews];
+
+//    elementDirectXibTwo.frame = CGRectMake(0, 8, kScreenW, kScreenH*0.5);
+//    [elementDirectXibTwo layoutIfNeeded];
+
+//    [self.view addSubview:self.containerView];
+//    [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.view.mas_left);
+//        make.top.mas_equalTo(self.view.mas_top).offset(40);
+//        make.right.mas_equalTo(self.view.mas_right);
+//        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-40);
+//    }];
+//
+//    [self.containerView.contentView addSubview:self.contentV];
+//    [self.contentV mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.containerView.contentView.mas_left);
+//        make.top.mas_equalTo(self.containerView.contentView.mas_top);
+//        make.width.mas_equalTo(self.containerView.mas_width);
+//
+//        make.right.mas_equalTo(self.containerView.contentView.mas_right);
+//        make.bottom.mas_equalTo(self.containerView.contentView.mas_bottom);
+//    }];
+//
+//    XibTestViewTwo *elementDirectXibTwo = [XibTestViewTwo shareInstance];
+//
+//    [self.contentV addSubview:elementDirectXibTwo];
+//    [elementDirectXibTwo mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.contentV.mas_left);
+//        make.top.mas_equalTo(self.contentV.mas_top);
+//        make.width.mas_equalTo(self.contentV.mas_width);
+//        make.height.mas_equalTo(@(kScreenH*2));
+//
+//        make.bottom.mas_equalTo(self.contentV.mas_bottom);
+//
+//    }];
+//    [elementDirectXibTwo layoutIfNeeded];
+
+
+
+
+
 }
+
 
 @end

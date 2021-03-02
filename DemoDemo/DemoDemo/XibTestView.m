@@ -9,7 +9,6 @@
 #import "XibTestView.h"
 
 @interface XibTestView ()
-//@property (weak, nonatomic) IBOutlet UILabel *ssss;
 
 @end
 
@@ -23,5 +22,11 @@
     // Drawing code
 }
 */
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    NSLog(@"layoutSubviews");
+    
+}
 
 @end
