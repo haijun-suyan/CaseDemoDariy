@@ -9,6 +9,7 @@
 #import "UIView+Swizz.h"
 
 @implementation UIView (Swizz)
+//特殊处理(事件交换)
 - (void)custom_touchesBegan:(NSSet <UITouch *> *)touches withEvent:(UIEvent *)event {
     //ToDo
     NSLog(@"ToDoToDoToDo");

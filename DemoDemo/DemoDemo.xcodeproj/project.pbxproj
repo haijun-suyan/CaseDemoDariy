@@ -36,7 +36,9 @@
 		F34D6427257F8ED900A064A2 /* NSObject+TimerDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F34D6426257F8ED900A064A2 /* NSObject+TimerDown.m */; };
 		F3554D5525753AC600913B95 /* UIView+Swizz.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554D5425753AC600913B95 /* UIView+Swizz.m */; };
 		F3554D592575E8B100913B95 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554D582575E8B100913B95 /* Dog.m */; };
+		F35A17E925F0B942002010DB /* UIView+Responder.m in Sources */ = {isa = PBXBuildFile; fileRef = F35A17E825F0B942002010DB /* UIView+Responder.m */; };
 		F368957125EBCEE000447454 /* ScrollContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F368957025EBCEE000447454 /* ScrollContainerView.m */; };
+		F3B8240825EE089E008AB467 /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B8240725EE089E008AB467 /* ResponderChainViewController.m */; };
 		F3D23096257E54E600B561DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D23095257E54E600B561DE /* UIKit.framework */; };
 		F3D230A0257E615200B561DE /* Base64Code.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D2309C257E615200B561DE /* Base64Code.m */; };
 		F3D230A1257E615200B561DE /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D2309D257E615200B561DE /* UIColor+Additions.m */; };
@@ -114,8 +116,12 @@
 		F3554D5425753AC600913B95 /* UIView+Swizz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Swizz.m"; sourceTree = "<group>"; };
 		F3554D572575E8B100913B95 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		F3554D582575E8B100913B95 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		F35A17E725F0B942002010DB /* UIView+Responder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Responder.h"; sourceTree = "<group>"; };
+		F35A17E825F0B942002010DB /* UIView+Responder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Responder.m"; sourceTree = "<group>"; };
 		F368956F25EBCED900447454 /* ScrollContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollContainerView.h; sourceTree = "<group>"; };
 		F368957025EBCEE000447454 /* ScrollContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollContainerView.m; sourceTree = "<group>"; };
+		F3B8240625EE089E008AB467 /* ResponderChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderChainViewController.h; sourceTree = "<group>"; };
+		F3B8240725EE089E008AB467 /* ResponderChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
 		F3D23095257E54E600B561DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3D2309C257E615200B561DE /* Base64Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Code.m; sourceTree = "<group>"; };
 		F3D2309D257E615200B561DE /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
@@ -168,6 +174,8 @@
 				F31A309725664FEB00FA863A /* SceneDelegate.m */,
 				F31A309925664FEB00FA863A /* ViewController.h */,
 				F31A309A25664FEB00FA863A /* ViewController.m */,
+				F3B8240625EE089E008AB467 /* ResponderChainViewController.h */,
+				F3B8240725EE089E008AB467 /* ResponderChainViewController.m */,
 				F368956F25EBCED900447454 /* ScrollContainerView.h */,
 				F368957025EBCEE000447454 /* ScrollContainerView.m */,
 				F323997D25DE9AA700B022BB /* XibTestView.h */,
@@ -180,6 +188,8 @@
 				F3554D582575E8B100913B95 /* Dog.m */,
 				F3554D5325753AC600913B95 /* UIView+Swizz.h */,
 				F3554D5425753AC600913B95 /* UIView+Swizz.m */,
+				F35A17E725F0B942002010DB /* UIView+Responder.h */,
+				F35A17E825F0B942002010DB /* UIView+Responder.m */,
 				F31EA7D52573F72E00D17132 /* NSObject+Supplement.h */,
 				F31EA7D62573F72E00D17132 /* NSObject+Supplement.m */,
 				F31A309C25664FEB00FA863A /* Main.storyboard */,
@@ -340,6 +350,7 @@
 				F31A309B25664FEB00FA863A /* ViewController.m in Sources */,
 				F368957125EBCEE000447454 /* ScrollContainerView.m in Sources */,
 				F31A8B0125EC9EE500CC75C8 /* ViewController+MASAdditions.m in Sources */,
+				F3B8240825EE089E008AB467 /* ResponderChainViewController.m in Sources */,
 				F3D230A6257E6F1E00B561DE /* HarisUtil.m in Sources */,
 				F31A309525664FEB00FA863A /* AppDelegate.m in Sources */,
 				F31A8B0925EC9EE500CC75C8 /* MASViewAttribute.m in Sources */,
@@ -359,6 +370,7 @@
 				F3554D592575E8B100913B95 /* Dog.m in Sources */,
 				F3554D5525753AC600913B95 /* UIView+Swizz.m in Sources */,
 				F31EA7D72573F72E00D17132 /* NSObject+Supplement.m in Sources */,
+				F35A17E925F0B942002010DB /* UIView+Responder.m in Sources */,
 				F3D230A0257E615200B561DE /* Base64Code.m in Sources */,
 				F31A8B0625EC9EE500CC75C8 /* View+MASAdditions.m in Sources */,
 			);

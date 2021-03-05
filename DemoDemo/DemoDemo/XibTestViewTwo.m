@@ -8,6 +8,7 @@
 
 #import "XibTestViewTwo.h"
 
+
 @interface XibTestViewTwo ()
 
 @end
@@ -23,6 +24,10 @@
 }
 
 - (IBAction)testBtnClicked:(id)sender {
+    if (self.BtnClick) {
+        self.BtnClick();
+    }
+    
     NSLog(@"testBtnClicked");
 }
 

@@ -8,6 +8,7 @@
 //
 
 #import "ViewController.h"
+#import "ResponderChainViewController.h"
 //runtime.h文件属于非公开文件(文件引入不会自动弹出/手动强制写入)
 #import <objc/runtime.h>
 
@@ -19,6 +20,7 @@
 #import "ScrollContainerView.h"
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
+
 @interface ViewController ()
 //链接渲染
 @property(nonatomic,strong)CADisplayLink *displayLink;
@@ -400,12 +402,13 @@
     [elementDirectXibTwo setNeedsDisplay];
 //    elementDirectXibTwo.contentMode = UIViewContentModeRedraw;
 
-
-
-
-
-
     elementDirectXibTwo.frame = CGRectMake(0, 103, kScreenW, kScreenH*0.7);
+    elementDirectXibTwo.BtnClick = ^{
+        ResponderChainViewController *vc = [ResponderChainViewController new];
+        vc.view.backgroundColor = [UIColor whiteColor];
+        [self presentViewController:vc animated:YES completion:nil];
+    };
+
 
 //    [elementDirectXibTwo layoutIfNeeded];
 //    [elementDirectXibTwo layoutSubviews];

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface XibTestViewTwo : UIView
+@property(nonatomic,copy)void (^BtnClick)(void);
 + (instancetype)shareInstance;
-
 @end
