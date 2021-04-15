@@ -82,7 +82,18 @@
 //    NSLog(@"srt=%@",str);
 
 
+
 }
+
+- (void)testName:(NSString *)name {
+    NSLog(@"xcode");
+}
+
+- (void)testHeight:(NSString *)height {
+    
+}
+
+
 
 - (void)displayLinkInstance {
     //底层自动触发型指令调用(系统底层调用指令处一般默认进行所在类的对象实例值写入)
@@ -202,7 +213,6 @@
     Method custom = class_getInstanceMethod([UIView class], @selector(custom_touchesBegan:withEvent:));
     //交换生效C库函数生效(origin/custom对应客观有效的IMP(新增/继承))
     method_exchangeImplementations(origin, custom);
-
 }
 
 - (void)didReceiveMemoryWarning {

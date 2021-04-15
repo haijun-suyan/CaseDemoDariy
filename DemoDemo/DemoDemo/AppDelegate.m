@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "ResponderChainViewController.h"
+#import "CatagoryViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +20,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //Xcode11前生效
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    UIViewController *vC = [[CatagoryViewController alloc] init];
+    self.window.rootViewController = vC;
+    //window核心化可见
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

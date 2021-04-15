@@ -3,8 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F3F26A3E25FB3D5400F0C8D7 /* OCLintTest */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F3F26A4125FB3D5400F0C8D7 /* Build configuration list for PBXAggregateTarget "OCLintTest" */;
+			buildPhases = (
+				F3F26A4425FB449500F0C8D7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLintTest;
+			productName = OCLintTest;
+		};
+/* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		F31A309525664FEB00FA863A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F31A309425664FEB00FA863A /* AppDelegate.m */; };
@@ -33,12 +47,42 @@
 		F320A6B525E74DCD004DC0B1 /* XibTestViewTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = F320A6B425E74DCD004DC0B1 /* XibTestViewTwo.xib */; };
 		F323997F25DE9AA700B022BB /* XibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = F323997E25DE9AA700B022BB /* XibTestView.m */; };
 		F323998225DE9F9B00B022BB /* CustomTestCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = F323998125DE9F9B00B022BB /* CustomTestCanvas.xib */; };
+		F33C8D7925FE122D00354DE1 /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D5025FE122D00354DE1 /* ResponderChainViewController.m */; };
+		F33C8D7A25FE122D00354DE1 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D5125FE122D00354DE1 /* PlayViewController.m */; };
+		F33C8D7B25FE122D00354DE1 /* XibTestViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D5325FE122D00354DE1 /* XibTestViewTwo.m */; };
+		F33C8D7C25FE122D00354DE1 /* Base64Code.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D5825FE122D00354DE1 /* Base64Code.m */; };
+		F33C8D7D25FE122D00354DE1 /* HarisUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D5925FE122D00354DE1 /* HarisUtil.m */; };
+		F33C8D7E25FE122D00354DE1 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D5B25FE122D00354DE1 /* UIColor+Additions.m */; };
+		F33C8D7F25FE122D00354DE1 /* NSObject+TimerDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D5E25FE122D00354DE1 /* NSObject+TimerDown.m */; };
+		F33C8D8025FE122D00354DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33C8D6125FE122D00354DE1 /* Assets.xcassets */; };
+		F33C8D8125FE122D00354DE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D6225FE122D00354DE1 /* ViewController.m */; };
+		F33C8D8225FE122D00354DE1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D6325FE122D00354DE1 /* SceneDelegate.m */; };
+		F33C8D8325FE122D00354DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C8D6425FE122D00354DE1 /* LaunchScreen.storyboard */; };
+		F33C8D8425FE122D00354DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C8D6625FE122D00354DE1 /* Main.storyboard */; };
+		F33C8D8525FE122D00354DE1 /* UIView+Responder.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D6925FE122D00354DE1 /* UIView+Responder.m */; };
+		F33C8D8625FE122D00354DE1 /* ScrollContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D6A25FE122D00354DE1 /* ScrollContainerView.m */; };
+		F33C8D8725FE122D00354DE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D6B25FE122D00354DE1 /* main.m */; };
+		F33C8D8825FE122D00354DE1 /* CustomTestCanvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33C8D6D25FE122D00354DE1 /* CustomTestCanvas.xib */; };
+		F33C8D8925FE122D00354DE1 /* XibTestViewTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33C8D6E25FE122D00354DE1 /* XibTestViewTwo.xib */; };
+		F33C8D8A25FE122D00354DE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D7025FE122D00354DE1 /* AppDelegate.m */; };
+		F33C8D8B25FE122D00354DE1 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D7225FE122D00354DE1 /* Dog.m */; };
+		F33C8D8C25FE122D00354DE1 /* NSObject+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D7325FE122D00354DE1 /* NSObject+Supplement.m */; };
+		F33C8D8D25FE122D00354DE1 /* UIView+Swizz.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D7425FE122D00354DE1 /* UIView+Swizz.m */; };
+		F33C8D8E25FE122D00354DE1 /* XibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = F33C8D7525FE122D00354DE1 /* XibTestView.m */; };
+		F33C8D9925FE12CE00354DE1 /* oclint.sh in Resources */ = {isa = PBXBuildFile; fileRef = F33C8D9825FE12CE00354DE1 /* oclint.sh */; };
 		F34D6427257F8ED900A064A2 /* NSObject+TimerDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F34D6426257F8ED900A064A2 /* NSObject+TimerDown.m */; };
 		F3554D5525753AC600913B95 /* UIView+Swizz.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554D5425753AC600913B95 /* UIView+Swizz.m */; };
 		F3554D592575E8B100913B95 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554D582575E8B100913B95 /* Dog.m */; };
 		F35A17E925F0B942002010DB /* UIView+Responder.m in Sources */ = {isa = PBXBuildFile; fileRef = F35A17E825F0B942002010DB /* UIView+Responder.m */; };
 		F368957125EBCEE000447454 /* ScrollContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F368957025EBCEE000447454 /* ScrollContainerView.m */; };
 		F3B8240825EE089E008AB467 /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B8240725EE089E008AB467 /* ResponderChainViewController.m */; };
+		F3C8FCC826268252009CE84C /* CatagoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8FCC626268252009CE84C /* CatagoryViewController.m */; };
+		F3C8FCC926268252009CE84C /* CatagoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C8FCC726268252009CE84C /* CatagoryViewController.xib */; };
+		F3C8FCD026268F9B009CE84C /* NSString+A.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8FCCF26268F9B009CE84C /* NSString+A.m */; };
+		F3C8FCD526268FEF009CE84C /* NSString+B.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8FCD426268FEF009CE84C /* NSString+B.m */; };
+		F3C8FCDA26268FFD009CE84C /* NSString+C.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8FCD926268FFD009CE84C /* NSString+C.m */; };
+		F3C8FCDF26269009009CE84C /* NSString+D.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8FCDE26269009009CE84C /* NSString+D.m */; };
+		F3C8FCE426269020009CE84C /* NSString+E.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8FCE326269020009CE84C /* NSString+E.m */; };
 		F3D23096257E54E600B561DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D23095257E54E600B561DE /* UIKit.framework */; };
 		F3D230A0257E615200B561DE /* Base64Code.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D2309C257E615200B561DE /* Base64Code.m */; };
 		F3D230A1257E615200B561DE /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D2309D257E615200B561DE /* UIColor+Additions.m */; };
@@ -110,6 +154,47 @@
 		F323997D25DE9AA700B022BB /* XibTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibTestView.h; sourceTree = "<group>"; };
 		F323997E25DE9AA700B022BB /* XibTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibTestView.m; sourceTree = "<group>"; };
 		F323998125DE9F9B00B022BB /* CustomTestCanvas.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTestCanvas.xib; sourceTree = "<group>"; };
+		F33C8D4E25FE122D00354DE1 /* ScrollContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollContainerView.h; sourceTree = "<group>"; };
+		F33C8D4F25FE122D00354DE1 /* UIView+Responder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Responder.h"; sourceTree = "<group>"; };
+		F33C8D5025FE122D00354DE1 /* ResponderChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
+		F33C8D5125FE122D00354DE1 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		F33C8D5225FE122D00354DE1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F33C8D5325FE122D00354DE1 /* XibTestViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTestViewTwo.m; sourceTree = "<group>"; };
+		F33C8D5425FE122D00354DE1 /* UIView+Swizz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Swizz.h"; sourceTree = "<group>"; };
+		F33C8D5525FE122D00354DE1 /* XibTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibTestView.h; sourceTree = "<group>"; };
+		F33C8D5625FE122D00354DE1 /* NSObject+Supplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Supplement.h"; sourceTree = "<group>"; };
+		F33C8D5825FE122D00354DE1 /* Base64Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Code.m; sourceTree = "<group>"; };
+		F33C8D5925FE122D00354DE1 /* HarisUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HarisUtil.m; sourceTree = "<group>"; };
+		F33C8D5A25FE122D00354DE1 /* NSObject+TimerDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TimerDown.h"; sourceTree = "<group>"; };
+		F33C8D5B25FE122D00354DE1 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		F33C8D5C25FE122D00354DE1 /* Base64Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Code.h; sourceTree = "<group>"; };
+		F33C8D5D25FE122D00354DE1 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		F33C8D5E25FE122D00354DE1 /* NSObject+TimerDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TimerDown.m"; sourceTree = "<group>"; };
+		F33C8D5F25FE122D00354DE1 /* HarisUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarisUtil.h; sourceTree = "<group>"; };
+		F33C8D6025FE122D00354DE1 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		F33C8D6125FE122D00354DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F33C8D6225FE122D00354DE1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F33C8D6325FE122D00354DE1 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F33C8D6525FE122D00354DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F33C8D6725FE122D00354DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F33C8D6825FE122D00354DE1 /* ResponderChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponderChainViewController.h; sourceTree = "<group>"; };
+		F33C8D6925FE122D00354DE1 /* UIView+Responder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Responder.m"; sourceTree = "<group>"; };
+		F33C8D6A25FE122D00354DE1 /* ScrollContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollContainerView.m; sourceTree = "<group>"; };
+		F33C8D6B25FE122D00354DE1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F33C8D6C25FE122D00354DE1 /* DemoDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DemoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		F33C8D6D25FE122D00354DE1 /* CustomTestCanvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTestCanvas.xib; sourceTree = "<group>"; };
+		F33C8D6E25FE122D00354DE1 /* XibTestViewTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibTestViewTwo.xib; sourceTree = "<group>"; };
+		F33C8D6F25FE122D00354DE1 /* XibTestViewTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibTestViewTwo.h; sourceTree = "<group>"; };
+		F33C8D7025FE122D00354DE1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F33C8D7125FE122D00354DE1 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		F33C8D7225FE122D00354DE1 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		F33C8D7325FE122D00354DE1 /* NSObject+Supplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Supplement.m"; sourceTree = "<group>"; };
+		F33C8D7425FE122D00354DE1 /* UIView+Swizz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Swizz.m"; sourceTree = "<group>"; };
+		F33C8D7525FE122D00354DE1 /* XibTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTestView.m; sourceTree = "<group>"; };
+		F33C8D7625FE122D00354DE1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33C8D7725FE122D00354DE1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F33C8D7825FE122D00354DE1 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F33C8D9825FE12CE00354DE1 /* oclint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = oclint.sh; sourceTree = "<group>"; };
 		F34D6425257F8ED900A064A2 /* NSObject+TimerDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TimerDown.h"; sourceTree = "<group>"; };
 		F34D6426257F8ED900A064A2 /* NSObject+TimerDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TimerDown.m"; sourceTree = "<group>"; };
 		F3554D5325753AC600913B95 /* UIView+Swizz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Swizz.h"; sourceTree = "<group>"; };
@@ -122,6 +207,19 @@
 		F368957025EBCEE000447454 /* ScrollContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollContainerView.m; sourceTree = "<group>"; };
 		F3B8240625EE089E008AB467 /* ResponderChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderChainViewController.h; sourceTree = "<group>"; };
 		F3B8240725EE089E008AB467 /* ResponderChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
+		F3C8FCC526268252009CE84C /* CatagoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatagoryViewController.h; sourceTree = "<group>"; };
+		F3C8FCC626268252009CE84C /* CatagoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatagoryViewController.m; sourceTree = "<group>"; };
+		F3C8FCC726268252009CE84C /* CatagoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatagoryViewController.xib; sourceTree = "<group>"; };
+		F3C8FCCE26268F9B009CE84C /* NSString+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+A.h"; sourceTree = "<group>"; };
+		F3C8FCCF26268F9B009CE84C /* NSString+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+A.m"; sourceTree = "<group>"; };
+		F3C8FCD326268FEF009CE84C /* NSString+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+B.h"; sourceTree = "<group>"; };
+		F3C8FCD426268FEF009CE84C /* NSString+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+B.m"; sourceTree = "<group>"; };
+		F3C8FCD826268FFD009CE84C /* NSString+C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+C.h"; sourceTree = "<group>"; };
+		F3C8FCD926268FFD009CE84C /* NSString+C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+C.m"; sourceTree = "<group>"; };
+		F3C8FCDD26269009009CE84C /* NSString+D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+D.h"; sourceTree = "<group>"; };
+		F3C8FCDE26269009009CE84C /* NSString+D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+D.m"; sourceTree = "<group>"; };
+		F3C8FCE226269020009CE84C /* NSString+E.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+E.h"; sourceTree = "<group>"; };
+		F3C8FCE326269020009CE84C /* NSString+E.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+E.m"; sourceTree = "<group>"; };
 		F3D23095257E54E600B561DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3D2309C257E615200B561DE /* Base64Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Code.m; sourceTree = "<group>"; };
 		F3D2309D257E615200B561DE /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
@@ -149,6 +247,7 @@
 		F31A308725664FEB00FA863A = {
 			isa = PBXGroup;
 			children = (
+				F33C8D9825FE12CE00354DE1 /* oclint.sh */,
 				F31A8AE225EC9EE500CC75C8 /* Masonry */,
 				F3D230A2257E655600B561DE /* DemoDemo-Prefix.pch */,
 				F31A309225664FEB00FA863A /* DemoDemo */,
@@ -168,6 +267,7 @@
 		F31A309225664FEB00FA863A /* DemoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F33C8D4D25FE122D00354DE1 /* DemoDemo */,
 				F31A309325664FEB00FA863A /* AppDelegate.h */,
 				F31A309425664FEB00FA863A /* AppDelegate.m */,
 				F31A309625664FEB00FA863A /* SceneDelegate.h */,
@@ -178,6 +278,9 @@
 				F3B8240725EE089E008AB467 /* ResponderChainViewController.m */,
 				F368956F25EBCED900447454 /* ScrollContainerView.h */,
 				F368957025EBCEE000447454 /* ScrollContainerView.m */,
+				F3C8FCC526268252009CE84C /* CatagoryViewController.h */,
+				F3C8FCC626268252009CE84C /* CatagoryViewController.m */,
+				F3C8FCC726268252009CE84C /* CatagoryViewController.xib */,
 				F323997D25DE9AA700B022BB /* XibTestView.h */,
 				F323997E25DE9AA700B022BB /* XibTestView.m */,
 				F323998125DE9F9B00B022BB /* CustomTestCanvas.xib */,
@@ -256,6 +359,79 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		F33C8D4D25FE122D00354DE1 /* DemoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F3C8FCCD26268F23009CE84C /* Catagory */,
+				F33C8D4E25FE122D00354DE1 /* ScrollContainerView.h */,
+				F33C8D4F25FE122D00354DE1 /* UIView+Responder.h */,
+				F33C8D5025FE122D00354DE1 /* ResponderChainViewController.m */,
+				F33C8D5125FE122D00354DE1 /* PlayViewController.m */,
+				F33C8D5225FE122D00354DE1 /* AppDelegate.h */,
+				F33C8D5325FE122D00354DE1 /* XibTestViewTwo.m */,
+				F33C8D5425FE122D00354DE1 /* UIView+Swizz.h */,
+				F33C8D5525FE122D00354DE1 /* XibTestView.h */,
+				F33C8D5625FE122D00354DE1 /* NSObject+Supplement.h */,
+				F33C8D5725FE122D00354DE1 /* CustomFile */,
+				F33C8D6025FE122D00354DE1 /* Dog.h */,
+				F33C8D6125FE122D00354DE1 /* Assets.xcassets */,
+				F33C8D6225FE122D00354DE1 /* ViewController.m */,
+				F33C8D6325FE122D00354DE1 /* SceneDelegate.m */,
+				F33C8D6425FE122D00354DE1 /* LaunchScreen.storyboard */,
+				F33C8D6625FE122D00354DE1 /* Main.storyboard */,
+				F33C8D6825FE122D00354DE1 /* ResponderChainViewController.h */,
+				F33C8D6925FE122D00354DE1 /* UIView+Responder.m */,
+				F33C8D6A25FE122D00354DE1 /* ScrollContainerView.m */,
+				F33C8D6B25FE122D00354DE1 /* main.m */,
+				F33C8D6C25FE122D00354DE1 /* DemoDemo-Bridging-Header.h */,
+				F33C8D6D25FE122D00354DE1 /* CustomTestCanvas.xib */,
+				F33C8D6E25FE122D00354DE1 /* XibTestViewTwo.xib */,
+				F33C8D6F25FE122D00354DE1 /* XibTestViewTwo.h */,
+				F33C8D7025FE122D00354DE1 /* AppDelegate.m */,
+				F33C8D7125FE122D00354DE1 /* PlayViewController.h */,
+				F33C8D7225FE122D00354DE1 /* Dog.m */,
+				F33C8D7325FE122D00354DE1 /* NSObject+Supplement.m */,
+				F33C8D7425FE122D00354DE1 /* UIView+Swizz.m */,
+				F33C8D7525FE122D00354DE1 /* XibTestView.m */,
+				F33C8D7625FE122D00354DE1 /* Info.plist */,
+				F33C8D7725FE122D00354DE1 /* ViewController.h */,
+				F33C8D7825FE122D00354DE1 /* SceneDelegate.h */,
+			);
+			name = DemoDemo;
+			sourceTree = "<group>";
+		};
+		F33C8D5725FE122D00354DE1 /* CustomFile */ = {
+			isa = PBXGroup;
+			children = (
+				F33C8D5825FE122D00354DE1 /* Base64Code.m */,
+				F33C8D5925FE122D00354DE1 /* HarisUtil.m */,
+				F33C8D5A25FE122D00354DE1 /* NSObject+TimerDown.h */,
+				F33C8D5B25FE122D00354DE1 /* UIColor+Additions.m */,
+				F33C8D5C25FE122D00354DE1 /* Base64Code.h */,
+				F33C8D5D25FE122D00354DE1 /* UIColor+Additions.h */,
+				F33C8D5E25FE122D00354DE1 /* NSObject+TimerDown.m */,
+				F33C8D5F25FE122D00354DE1 /* HarisUtil.h */,
+			);
+			path = CustomFile;
+			sourceTree = "<group>";
+		};
+		F3C8FCCD26268F23009CE84C /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				F3C8FCCE26268F9B009CE84C /* NSString+A.h */,
+				F3C8FCCF26268F9B009CE84C /* NSString+A.m */,
+				F3C8FCD326268FEF009CE84C /* NSString+B.h */,
+				F3C8FCD426268FEF009CE84C /* NSString+B.m */,
+				F3C8FCD826268FFD009CE84C /* NSString+C.h */,
+				F3C8FCD926268FFD009CE84C /* NSString+C.m */,
+				F3C8FCDD26269009009CE84C /* NSString+D.h */,
+				F3C8FCDE26269009009CE84C /* NSString+D.m */,
+				F3C8FCE226269020009CE84C /* NSString+E.h */,
+				F3C8FCE326269020009CE84C /* NSString+E.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
 		F3D2309B257E615200B561DE /* CustomFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,12 +474,15 @@
 		F31A308825664FEB00FA863A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = haijunyan;
 				TargetAttributes = {
 					F31A308F25664FEB00FA863A = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
+					};
+					F3F26A3E25FB3D5400F0C8D7 = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
@@ -321,6 +500,7 @@
 			projectRoot = "";
 			targets = (
 				F31A308F25664FEB00FA863A /* DemoDemo */,
+				F3F26A3E25FB3D5400F0C8D7 /* OCLintTest */,
 			);
 		};
 /* End PBXProject section */
@@ -330,49 +510,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33C8D8325FE122D00354DE1 /* LaunchScreen.storyboard in Resources */,
+				F33C8D8425FE122D00354DE1 /* Main.storyboard in Resources */,
 				F31A8AFF25EC9EE500CC75C8 /* LICENSE in Resources */,
 				F323998225DE9F9B00B022BB /* CustomTestCanvas.xib in Resources */,
 				F31A30A325664FEC00FA863A /* LaunchScreen.storyboard in Resources */,
+				F33C8D8825FE122D00354DE1 /* CustomTestCanvas.xib in Resources */,
+				F3C8FCC926268252009CE84C /* CatagoryViewController.xib in Resources */,
 				F31A8B0A25EC9EE500CC75C8 /* README.md in Resources */,
+				F33C8D8925FE122D00354DE1 /* XibTestViewTwo.xib in Resources */,
 				F31A30A025664FEC00FA863A /* Assets.xcassets in Resources */,
+				F33C8D9925FE12CE00354DE1 /* oclint.sh in Resources */,
 				F31A309E25664FEB00FA863A /* Main.storyboard in Resources */,
+				F33C8D8025FE122D00354DE1 /* Assets.xcassets in Resources */,
 				F320A6B525E74DCD004DC0B1 /* XibTestViewTwo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3F26A4425FB449500F0C8D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F31A308C25664FEB00FA863A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C8FCD026268F9B009CE84C /* NSString+A.m in Sources */,
+				F3C8FCD526268FEF009CE84C /* NSString+B.m in Sources */,
+				F3C8FCDA26268FFD009CE84C /* NSString+C.m in Sources */,
+				F3C8FCDF26269009009CE84C /* NSString+D.m in Sources */,
+				F3C8FCE426269020009CE84C /* NSString+E.m in Sources */,
+				F33C8D8125FE122D00354DE1 /* ViewController.m in Sources */,
 				F31A309B25664FEB00FA863A /* ViewController.m in Sources */,
+				F33C8D8B25FE122D00354DE1 /* Dog.m in Sources */,
+				F33C8D8C25FE122D00354DE1 /* NSObject+Supplement.m in Sources */,
 				F368957125EBCEE000447454 /* ScrollContainerView.m in Sources */,
+				F33C8D8525FE122D00354DE1 /* UIView+Responder.m in Sources */,
 				F31A8B0125EC9EE500CC75C8 /* ViewController+MASAdditions.m in Sources */,
 				F3B8240825EE089E008AB467 /* ResponderChainViewController.m in Sources */,
 				F3D230A6257E6F1E00B561DE /* HarisUtil.m in Sources */,
 				F31A309525664FEB00FA863A /* AppDelegate.m in Sources */,
+				F33C8D8725FE122D00354DE1 /* main.m in Sources */,
 				F31A8B0925EC9EE500CC75C8 /* MASViewAttribute.m in Sources */,
 				F31A8B0425EC9EE500CC75C8 /* MASLayoutConstraint.m in Sources */,
+				F33C8D7D25FE122D00354DE1 /* HarisUtil.m in Sources */,
 				F31A8B0325EC9EE500CC75C8 /* MASConstraintMaker.m in Sources */,
+				F33C8D7C25FE122D00354DE1 /* Base64Code.m in Sources */,
 				F31A8B0825EC9EE500CC75C8 /* MASViewConstraint.m in Sources */,
 				F3D230A1257E615200B561DE /* UIColor+Additions.m in Sources */,
 				F31A30A625664FEC00FA863A /* main.m in Sources */,
+				F33C8D7925FE122D00354DE1 /* ResponderChainViewController.m in Sources */,
 				F31A309825664FEB00FA863A /* SceneDelegate.m in Sources */,
+				F33C8D8225FE122D00354DE1 /* SceneDelegate.m in Sources */,
+				F33C8D8A25FE122D00354DE1 /* AppDelegate.m in Sources */,
 				F320A6B225E74D6F004DC0B1 /* XibTestViewTwo.m in Sources */,
 				F31A8B0025EC9EE500CC75C8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F31A8B0525EC9EE500CC75C8 /* NSArray+MASAdditions.m in Sources */,
+				F33C8D7B25FE122D00354DE1 /* XibTestViewTwo.m in Sources */,
 				F31A8B0225EC9EE500CC75C8 /* MASCompositeConstraint.m in Sources */,
+				F33C8D8D25FE122D00354DE1 /* UIView+Swizz.m in Sources */,
+				F33C8D7E25FE122D00354DE1 /* UIColor+Additions.m in Sources */,
 				F323997F25DE9AA700B022BB /* XibTestView.m in Sources */,
 				F34D6427257F8ED900A064A2 /* NSObject+TimerDown.m in Sources */,
+				F33C8D7A25FE122D00354DE1 /* PlayViewController.m in Sources */,
 				F31A8B0725EC9EE500CC75C8 /* MASConstraint.m in Sources */,
 				F3554D592575E8B100913B95 /* Dog.m in Sources */,
 				F3554D5525753AC600913B95 /* UIView+Swizz.m in Sources */,
+				F3C8FCC826268252009CE84C /* CatagoryViewController.m in Sources */,
+				F33C8D7F25FE122D00354DE1 /* NSObject+TimerDown.m in Sources */,
 				F31EA7D72573F72E00D17132 /* NSObject+Supplement.m in Sources */,
 				F35A17E925F0B942002010DB /* UIView+Responder.m in Sources */,
 				F3D230A0257E615200B561DE /* Base64Code.m in Sources */,
 				F31A8B0625EC9EE500CC75C8 /* View+MASAdditions.m in Sources */,
+				F33C8D8625FE122D00354DE1 /* ScrollContainerView.m in Sources */,
+				F33C8D8E25FE122D00354DE1 /* XibTestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +625,22 @@
 				F31A30A225664FEC00FA863A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F33C8D6425FE122D00354DE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F33C8D6525FE122D00354DE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F33C8D6625FE122D00354DE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F33C8D6725FE122D00354DE1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,6 +672,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -448,7 +697,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -482,6 +731,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -500,7 +750,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -513,7 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCL9H5966U;
 				GCC_PREFIX_HEADER = "/Users/haijunyan/Desktop/CustomKit/CaseDemoDariy/DemoDemo/DemoDemo-Prefix.pch";
@@ -561,6 +811,24 @@
 			};
 			name = Release;
 		};
+		F3F26A3F25FB3D5400F0C8D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NCL9H5966U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F3F26A4025FB3D5400F0C8D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NCL9H5966U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +846,15 @@
 			buildConfigurations = (
 				F31A30AA25664FEC00FA863A /* Debug */,
 				F31A30AB25664FEC00FA863A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F26A4125FB3D5400F0C8D7 /* Build configuration list for PBXAggregateTarget "OCLintTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F26A3F25FB3D5400F0C8D7 /* Debug */,
+				F3F26A4025FB3D5400F0C8D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
