@@ -12,11 +12,10 @@
 //runtime.h文件属于非公开文件(文件引入不会自动弹出/手动强制写入)
 #import <objc/runtime.h>
 
-
-
 #import "Dog.h"
 #import "XibTestView.h"
 #import "XibTestViewTwo.h"
+#import "SRCBZYBAlertView.h"
 #import "ScrollContainerView.h"
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
@@ -405,19 +404,34 @@
 
     //    XibTestViewTwo *elementDirectXibTwo = [[[NSBundle mainBundle] loadNibNamed:@"XibTestViewTwo" owner:self options:nil] firstObject];
 
-    XibTestViewTwo *elementDirectXibTwo = [XibTestViewTwo shareInstance];
-    [self.view addSubview:elementDirectXibTwo];
-    elementDirectXibTwo.frame = CGRectMake(0, 8, kScreenW, kScreenH*0.7);
-    [elementDirectXibTwo sizeToFit];
-    [elementDirectXibTwo setNeedsDisplay];
-//    elementDirectXibTwo.contentMode = UIViewContentModeRedraw;
+//    XibTestViewTwo *elementDirectXibTwo = [XibTestViewTwo shareInstance];
+//    [self.view addSubview:elementDirectXibTwo];
+//    elementDirectXibTwo.frame = CGRectMake(0, 8, kScreenW, kScreenH*0.7);
+//    [elementDirectXibTwo sizeToFit];
+//    [elementDirectXibTwo setNeedsDisplay];
+////    elementDirectXibTwo.contentMode = UIViewContentModeRedraw;
+//
+//    elementDirectXibTwo.frame = CGRectMake(0, 103, kScreenW, kScreenH*0.7);
+//    elementDirectXibTwo.BtnClick = ^{
+//        ResponderChainViewController *vc = [ResponderChainViewController new];
+//        vc.view.backgroundColor = [UIColor whiteColor];
+//        [self presentViewController:vc animated:YES completion:nil];
+//    };
 
-    elementDirectXibTwo.frame = CGRectMake(0, 103, kScreenW, kScreenH*0.7);
-    elementDirectXibTwo.BtnClick = ^{
-        ResponderChainViewController *vc = [ResponderChainViewController new];
-        vc.view.backgroundColor = [UIColor whiteColor];
-        [self presentViewController:vc animated:YES completion:nil];
+
+    SRCBZYBAlertView *elementDirectXibTwo = [SRCBZYBAlertView shareInstance];
+    [self.view addSubview:elementDirectXibTwo];
+    elementDirectXibTwo.frame = CGRectMake(0, 0, kScreenW, kScreenH);
+    elementDirectXibTwo.ElementClick = ^(NSInteger index, UIButton *btn) {
+        if (index == 0) {//再等等
+
+        } else if (index == 1) {//前往
+
+        } else if (index == 2) {//不再提示
+
+        }
     };
+
 
 
 //    [elementDirectXibTwo layoutIfNeeded];

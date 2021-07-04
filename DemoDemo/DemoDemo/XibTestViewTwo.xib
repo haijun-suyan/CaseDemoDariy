@@ -27,6 +27,13 @@
                         <action selector="testBtnClicked:" destination="J7v-1d-j3Y" eventType="touchUpInside" id="4Xj-mJ-JSo"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5c-jx-ga7">
+                    <rect key="frame" x="75" y="341" width="140" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="gB1-iC-b6a"/>
             <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -34,7 +41,7 @@
                 <constraint firstItem="DVt-rL-aOh" firstAttribute="leading" secondItem="gB1-iC-b6a" secondAttribute="leading" constant="95" id="JJr-GT-Y3k"/>
                 <constraint firstItem="DVt-rL-aOh" firstAttribute="top" secondItem="gB1-iC-b6a" secondAttribute="top" constant="126" id="R1p-EP-lzu"/>
             </constraints>
-            <point key="canvasLocation" x="-26" y="-110"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="-110.49107142857143"/>
         </view>
     </objects>
     <resources>
